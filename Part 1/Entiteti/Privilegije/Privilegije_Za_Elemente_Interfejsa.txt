@@ -1,0 +1,17 @@
+CREATE TABLE PRIV_ZA_ELEMENTE_INTERFEJSA(
+Broj NUMBER(20) NOT NULL,
+Opis VARCHAR2(50) NOT NULL,
+Akcija VARCHAR2(2) NOT NULL,
+SamoVidiTajEl VARCHAR2(2) NOT NULL,
+TipPrivilegije NUMBER(20) NOT NULL,
+PRIMARY KEY(Broj),
+FOREIGN KEY(TipPrivilegije) REFERENCES PRIVILEGIJE(Broj)
+);
+
+INSERT INTO PRIV_ZA_ELEMENTE_INTERFEJSA(BROJ, OPIS, AKCIJA, SAMOVIDITAJEL,  TIPPRIVILEGIJE)
+
+VALUES(1, 'privilege interface do show', 'ne', 'da', 6);
+
+VALUES(2, 'privilege configure level 7 interface', 'ne', 'da', 6);
+
+VALUES(3, 'Browse availability', 'da', 'ne', 6);

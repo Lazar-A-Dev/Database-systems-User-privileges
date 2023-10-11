@@ -1,0 +1,22 @@
+CREATE TABLE GRUPA_KORISNIKA(
+JedIme VARCHAR2(10) NOT NULL,
+KratakOpis VARCHAR2(100) NOT NULL,
+DatumKreiranja DATE,
+VremePocPer VARCHAR2(5),
+VremeZavPer VARCHAR2(5),
+PRIMARY KEY(JedIme) 
+);
+
+INSERT INTO GRUPA_KORISNIKA(JEDIME, KRATAKOPIS, DATUMKREIRANJA, VREMEPOCPER, VREMEZAVPER)
+
+VALUES('Phoenix', 'Grupa sto specijalizuje u dizjniranju testova, scenarija i upuctva za nove programe', '13-SEP-2017', '09:00', '17:00');
+
+VALUES('CrackWire', 'Grupa sto specijalizuje u inkriptovanju i podesavanju java programa', '11-DEC-2011', '09:00', '17:00');
+
+VALUES('ComLink', 'Grupa sto specijalizuje u uspostavljanju konekcija, modfikovanjem i odrzavanjem sistema', '14-JUL-2013', '09:00', '17:00');
+
+VALUES('DataDusk', 'Grupa sto specijalizuje u povratku izgubljenih podataka', '15-SEP-2019', '09:00', '17:00');
+
+VALUES('EnixCrack', 'Grupa sto specijalizuje u dizjniranju testova, scenarija, inkricija i upuctva za java programe', '10-OCT-2018', '09:00', '17:00');
+
+VALUES('DataLink', 'Grupa sto specijalizuje u povratku izgubljenih podataka i modfikovanje sistema', '03-JAN-2020', '09:00', '17:00');

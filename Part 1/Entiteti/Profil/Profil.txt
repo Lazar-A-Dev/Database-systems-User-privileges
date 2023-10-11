@@ -1,0 +1,29 @@
+CREATE TABLE PROFIL(
+RedniBr NUMBER(10) NOT NULL,
+BojaPozadine VARCHAR2(15) NOT NULL,
+SpisakElGrafInt VARCHAR2(50) NOT NULL,
+PRIMARY KEY(RedniBr)
+);
+
+INSERT INTO PROFIL(REDNIBR, BOJAPOZADINE, SPISAKELGRAFINT)
+
+VALUES(14562, 'Plava', 'Tool tips, MessegeBox, Progress bar, Notifications');
+
+VALUES(14432, 'Siva', 'Tool tips, MessegeBox, Progress bar, Notifications');
+
+VALUES(14967, 'Crna', 'Tool tips, MessegeBox, Progress bar, Notifications');
+
+VALUES(15172, 'Zelena', 'Tool tips, MessegeBox, Progress bar, Notifications');
+
+VALUES(15689, 'Ljubicasta', 'Tool tips, MessegeBox, Progress bar, Notifications');
+
+VALUES(15783, 'Zuta', 'Tool tips, MessegeBox, Progress bar, Notifications');
+
+VALUES(16314, 'Crvena', 'Tool tips, MessegeBox, Progress bar, Notifications');
+
+VALUES(16578, 'Bela', 'Tool tips, MessegeBox, Progress bar, Notifications');
+
+VALUES(16732, 'Narandzasta', 'Tool tips, MessegeBox, Progress bar, Notifications');
+
+VALUES(17243, 'Braon', 'Tool tips, MessegeBox, Progress bar, Notifications');
+

@@ -1,0 +1,38 @@
+CREATE TABLE KORISNIK_IS(
+KorIme VARCHAR2(50) NOT NULL,
+DatRodj DATE,
+JedMatBr NUMBER(15) NOT NULL,
+VremePoc VARCHAR2(5),
+VremeZav VARCHAR2(5),
+ImeRadnogMesta VARCHAR2(40) NOT NULL,
+FunKojuObavlja VARCHAR2(40) NOT NULL,
+BrKancelarije NUMBER(3),
+SifraKor VARCHAR2(50) NOT NULL, 
+Ime VARCHAR2(80) NOT NULL,
+ImeRod VARCHAR2(80) NOT NULL,
+Prezime VARCHAR2(80) NOT NULL,
+PRIMARY KEY(KorIme)
+);
+
+INSERT INTO KORISNIK_IS(KORIME, DATRODJ, JEDMATBR, VREMEPOC, VREMEZAV, IMERADNOGMESTA, FUNKOJUOBAVLJA, BRKANCELARIJE, SIFRAKOR, IME, IMEROD, PREZIME)
+
+VALUES('NemanjaJ991', '12-SEP-1991', 1209912431224, '09:00', '15:00', 'Firefly', 'Program tester', 12, 'Netfiber2332', 'Nemanja', 'Ilija', 'Jocic');
+
+VALUES('TanjaM993', '09-JAN-1993', 0901993568321, '09:00', '15:00', 'Firefly', 'Program tester', 12, 'Takis234', 'Tanja', 'Sasa', 'Milic');
+
+VALUES('DaniloJ992', '03-OCT-1992', 0310992654237, '09:00', '15:00', 'Firefly', 'Software developer', 5, 'DanMan23', 'Danilo', 'Milutin', 'Jovic');
+
+VALUES('AnaP990', '06-APR-1990', 0904990782149, '09:00', '17:00', 'Croware', 'Software developer', 2, 'Ance23P', 'Ana', 'Ivan', 'Peric');
+
+VALUES('MarkoN992', '27-OCT-1992', 2710992871462, '09:00', '17:00', 'Croware', 'HTML Coder', 19, 'MarconijeGG22', 'Marko', 'Stefan', 'Najdanovic');
+
+VALUES('VeljkoD997', '11-MAR-1997', 1103997981532, '09:00', '17:00', 'Apeture', 'Web developer',9, 'Viper872', 'Veljko', 'Zoran', 'Denic');
+
+VALUES('JanaK993', '18-SEP-1993', 180993671534, '09:00', '17:00', 'Apeture', 'Computer system engineer',7, 'Janica234', 'Jana', 'Novica', 'Kitic');
+
+VALUES('DusanS994', '11-FEB-1994', 1102994837615, '09:00', '17:00', 'CodeWish', 'Database administrator',3, 'Dule445', 'Dusan', 'Lazar', 'Stojkovic');
+
+VALUES('MilutinS998', '15-DEC-1998', 1512998836510, '09:00', '17:00', 'SoftWolf', 'Computer system analyst',20, 'Mile22PS', 'Milutin', 'Dejan', 'Stojanovic');
+
+VALUES('TijanaP001', '02-JAN-2001', 0201001749016, '09:00', '17:00', 'SoftWolf', 'Network system administrator', 5, 'TinaPS23', 'Tijana', 'Stojan', 'Pesic');
+

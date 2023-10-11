@@ -1,0 +1,29 @@
+CREATE TABLE KOR_OBUHVATA_GRUPU(
+JedKorIme VARCHAR2(50) NOT NULL,
+JedImeGrupe VARCHAR2(10) NOT NULL,
+PRIMARY KEY(JedKorIme, JedImeGrupe),
+FOREIGN KEY(JedKorIme) REFERENCES KORISNIK_IS(KorIme),
+FOREIGN KEY(JedImeGrupe) REFERENCES GRUPA_KORISNIKA(JedIme)
+)
+
+INSERT INTO KOR_OBUHVATA_GRUPU(KOD, JEDKORIME, JEDIMEGRUPE)
+
+VALUES('NemanjaJ991', 'Phoenix');
+
+VALUES('TanjaM993', 'Phoenix');
+
+VALUES('DaniloJ992', 'Phoenix');
+
+VALUES('AnaP990', 'CrackWire');
+
+VALUES('MarkoN992', 'CrackWire');
+
+VALUES('VeljkoD997', 'DataDusk');
+
+VALUES('JanaK993', 'DataDusk');
+
+VALUES('DusanS994', 'DataDusk');
+
+VALUES('MilutinS998', 'ComLink');
+
+VALUES('TijanaP001', 'ComLink');

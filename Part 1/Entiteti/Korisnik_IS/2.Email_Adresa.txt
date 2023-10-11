@@ -1,0 +1,56 @@
+CREATE TABLE EMAIL_ADRESA(
+Kod NUMBER(20) NOT NULL,
+Email VARCHAR2(50) NOT NULL,
+JedKorIme VARCHAR2(50) NOT NULL,
+PRIMARY KEY(Kod),
+FOREIGN KEY(JedKorIme) REFERENCES KORISNIK_IS(KorIme)
+);
+
+
+INSERT INTO EMAIL_ADRESA(KOD, EMAIL, JEDKORIME)
+
+VALUES(15781, 'Nemanja.Jocic991@gmail.com', 'NemanjaJ991');
+
+VALUES(15784, 'Nemanja.Jocic788@gmail.com', 'NemanjaJ991');
+
+VALUES(15787, 'Nemanja.Jocic2PP@gmail.com', 'NemanjaJ991');
+
+VALUES(15817, 'Tanja.Milic993@gmail.com', 'TanjaM993');
+
+VALUES(15820, 'Tanja.MilicDPS3@gmail.com', 'TanjaM993');
+
+VALUES(15823, 'Tanja.MilicL77@gmail.com', 'TanjaM993');
+
+VALUES(15853, 'Danilo.Jovic771@gmail.com', 'DaniloJ992');
+
+VALUES(15856, 'Danilo.JovicHesh23@gmail.com', 'DaniloJ992');
+
+VALUES(15886, 'Ana.PericSpa02@gmail.com', 'AnaP990');
+
+VALUES(15889, 'Ana.Peric80lO@gmail.com', 'AnaP990');
+
+VALUES(15919, 'Marko.Najdanovic992@gmail.com', 'MarkoN992');
+
+VALUES(15922, 'Marko.NajdanovicCIPIO@gmail.com', 'MarkoN992');
+
+VALUES(15952, 'Veljko.Denic997@gmail.com', 'VeljkoD997');
+
+VALUES(15955, 'Veljko.DenicPQSL21@gmail.com', 'VeljkoD997');
+
+VALUES(15985, 'Jana.Kitic993@gmail.com', 'JanaK993');
+
+VALUES(15988, 'Jana.KiticPPSD@gmail.com', 'JanaK993');
+
+VALUES(16018, 'Dusan.Stojkovic994@gmail.com', 'DusanS994');
+
+VALUES(16021, 'Dusan.StojkovicGFFT88@gmail.com', 'DusanS994');
+
+VALUES(16051, 'Milutin.Stojanovic998@gmail.com', 'MilutinS998');
+
+VALUES(16054, 'Milutin.StojanovicJDS009@gmail.com', 'MilutinS998');
+
+VALUES(16084, 'Tijana.Pesic001@gmail.com', 'TijanaP001');
+
+VALUES(16087, 'Tijana.PesicSPD32@gmail.com', 'TijanaP001');
+
+VALUES(16090, 'Tijana.PesicRFD12@gmail.com', 'TijanaP001');
