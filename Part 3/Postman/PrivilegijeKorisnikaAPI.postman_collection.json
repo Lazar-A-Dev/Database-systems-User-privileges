@@ -1,0 +1,2281 @@
+{
+	"info": {
+		"_postman_id": "e9de3714-9f45-4b1c-a66d-29f1b825b9cf",
+		"name": "PrivilegijeKorisnikaAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23437205"
+	},
+	"item": [
+		{
+			"name": "KorisnikController",
+			"item": [
+				{
+					"name": "GetKorisnik",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44395/korisnik/getkorisnik?idKor=NemanjaJ991",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"korisnik",
+								"getkorisnik"
+							],
+							"query": [
+								{
+									"key": "idKor",
+									"value": "NemanjaJ991"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DodajKorisnka",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : \"MartaF996\",\r\n\"DatRodj\" : \"2019-01-06T17:16:40Z\",\r\n\"JedMatBr\" : 3059966743295,\r\n\"VremePoc\" : \"09:00\",\r\n\"VremeZav\" : \"15:00\",\r\n\"ImeRadnogMesta\" : \"Apeture\",\r\n\"FunKojuObavlja\" : \"Web developer\",\r\n\"BrKancelarije\" : 23,\r\n\"SifraKor\" : \"Maki32210\",\r\n\"Ime\" : \"Marta\",\r\n\"ImeRod\" : \"Darko\",\r\n\"Prezime\" : \"Filipinovic\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/korisnik/dodajkorisnika",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"korisnik",
+								"dodajkorisnika"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditKorisnika",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"KorIme\" : \"MartaF996\",\r\n\"VremePoc\" : \"10:00\",\r\n\"VremeZav\" : \"16:00\",\r\n\"ImeRadnogMesta\" : \"Apeture\",\r\n\"Funkcija\" : \"Web developer\",\r\n\"BrojKancelarije\" : 25\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/korisnik/editkorisnika",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"korisnik",
+								"editkorisnika"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteKorisnika",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"KorIme\": \"MartaF996\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/korisnik/brisikorisnika",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"korisnik",
+								"brisikorisnika"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GrupaController",
+			"item": [
+				{
+					"name": "GetGrupu",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44395/grupa/getgrupa?jedIme=Phoenix",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"grupa",
+								"getgrupa"
+							],
+							"query": [
+								{
+									"key": "jedIme",
+									"value": "Phoenix"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DodajGrupu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"Id\" : \"KeyWare\",\r\n\"KratakOpis\" : \"Grupa sto specijalizuje u prepravkama koda na sql-ovom jeziku\",\r\n\"DatumKreiranja\" : \"17-MAY-2016\",\r\n\"VremePocPer\" : \"09:00\",\r\n\"VremeZavPer\" : \"15:00\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/grupa/dodajgrupu",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"grupa",
+								"dodajgrupu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditGrupu",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"Id\" : \"KeyWare\",   \r\n\"KratakOpis\" : \"asd\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/grupa/editgrupe",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"grupa",
+								"editgrupe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteGrupu",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : \"KeyWare\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/grupa/brisigrupu",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"grupa",
+								"brisigrupu"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ProfilController",
+			"item": [
+				{
+					"name": "GetProfil",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44395/profil/getprofil?redniBr=14432",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"profil",
+								"getprofil"
+							],
+							"query": [
+								{
+									"key": "redniBr",
+									"value": "14432"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DodajProfil",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"BojaPozadine\" : \"Roze\",\r\n\"SpisakElGrafInt\" : \"Tool tips, MessegeBox, Progress bar, Notifications\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/profil/dodajprofil",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"profil",
+								"dodajprofil"
+							],
+							"query": [
+								{
+									"key": "redniBr",
+									"value": "14432",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditProfil",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"Id\" : 17265,   \r\n\"BojaPozadine\" : \"Zelena\",\r\n\"SpisakElGrafInt\" : \"Tool tips, MessegeBox, Progress bar, Adds\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/profil/editprofil",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"profil",
+								"editprofil"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProfil",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"Id\" : 17265\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/profil/brisiprofil",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"profil",
+								"brisiprofil"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PrivilegijeController",
+			"item": [
+				{
+					"name": "GetPrivilegije",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44395/privilegije/getprivilegije?Id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"privilegije",
+								"getprivilegije"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DodajPrivilegije",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"Tip\" : \"Ban user privilege\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/privilegije/dodajprivilegije",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"privilegije",
+								"dodajprivilegije"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditPrivilegije",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"Id\" : 26,   \r\n\"Tip\" : \"asd\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/privilegije/editprivilegije",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"privilegije",
+								"editprivilegije"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePrivilegije",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 26\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/privilegije/brisiprivilegije",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"privilegije",
+								"brisiprivilegije"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SistemProvereController",
+			"item": [
+				{
+					"name": "GetSistemProvere",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44395/sistemprovere/getsistemprovere?id=14333",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"sistemprovere",
+								"getsistemprovere"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "14333"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DodajSistemuProvere",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": \"AnaP990\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/sistemprovere/dodajsistemprovere",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"sistemprovere",
+								"dodajsistemprovere"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditSistemProvere",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 16766, \r\n    \"SifraZadPutProm\" : \"2022-09-22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/sistemprovere/editsistemprovere",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"sistemprovere",
+								"editsistemprovere"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteSistemProvere",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"Id\" : 16766\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/sistemprovere/brisisistemprovere",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"sistemprovere",
+								"brisisistemprovere"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "NeuspeliPokusajPrijaveController",
+			"item": [
+				{
+					"name": "GetNeuspeliPokusajPrijaveController",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44395/neuspelipokusajprijave/getneuspelipokusajprijave?Id=14470",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"neuspelipokusajprijave",
+								"getneuspelipokusajprijave"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "14470"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DodajNeuspeliPokusajPrijave",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : \"NemanjaJ991\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/neuspelipokusajprijave/dodajneuspelipokusajprijave",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"neuspelipokusajprijave",
+								"dodajneuspelipokusajprijave"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditNeuspeliPokusajPrijave",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 14541, \r\n    \"PogresnaSifra\" : \"Neyasdasd\",\r\n    \"Datum\" : \"19-NOV-2019\",\r\n    \"Vreme\" : \"09:09\",\r\n    \"IpAdresa\" : \"140.250.166.0\",\r\n    \"SifraKor\" : \"Netfiber2332\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/neuspelipokusajprijave/editneuspelipokusajprijave",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"neuspelipokusajprijave",
+								"editneuspelipokusajprijave"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BrisiNeuspeliPokusajPrijave",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"Id\" : 14541\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/neuspelipokusajprijave/brisineuspelipokusajprijave",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"neuspelipokusajprijave",
+								"brisineuspelipokusajprijave"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BrTelefonaController",
+			"item": [
+				{
+					"name": "GetBrTelefona",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44395/brtelefona/getbrtelefona?Id=15947",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"brtelefona",
+								"getbrtelefona"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "15947"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DodajBrTelefona",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : \"TanjaM993\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/brtelefona/dodajbrtelefona?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"brtelefona",
+								"dodajbrtelefona"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditBrTelefona",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"Id\" : 16147, \r\n    \"Telefon\" : \"06999999911\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/brtelefona/editbrtelefona?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"brtelefona",
+								"editbrtelefona"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteBrTelefona",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 16147\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/brtelefona/brisibrtelefona?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"brtelefona",
+								"brisibrtelefona"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SpisakIpAdresaController",
+			"item": [
+				{
+					"name": "GetSpisakIpAdresa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44395/spisakipadresa/getspisakipadresa?Id=15996",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"spisakipadresa",
+								"getspisakipadresa"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "15996"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DodajSpisakIpAdresa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : \"MilutinS998\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/spisakipadresa/dodajspisakipadresa?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"spisakipadresa",
+								"dodajspisakipadresa"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditSpisakIpAdresa",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"Id\" : 16287, \r\n    \"IpAdrese\" : \"122.22.33.33.4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/spisakipadresa/editspisakipadresa?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"spisakipadresa",
+								"editspisakipadresa"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteSpisakIpAdresa",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 16287\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/spisakipadresa/brisispisakipadresa?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"spisakipadresa",
+								"brisispisakipadresa"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EmailAdresaController",
+			"item": [
+				{
+					"name": "GetEmailAdresa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44395/emailadresa/getemailadresa?Id=15856",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"emailadresa",
+								"getemailadresa"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "15856"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DodajEmailAdresa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : \"MarkoN992\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/emailadresa/dodajemailadresa?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"emailadresa",
+								"dodajemailadresa"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditEmailAdresa",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"Id\" : 16111, \r\n    \"Email\" : \"Marko.Najdanovic101@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/emailadresa/editemailadresa?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"emailadresa",
+								"editemailadresa"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteEmailAdresa",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 16111\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/emailadresa/brisiemailadresa?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"emailadresa",
+								"brisiemailadresa"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SpisakIpAdresaGrupeController",
+			"item": [
+				{
+					"name": "GetSpisakIpAdresaGrupe",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44395/spisakipadresagrupe/getspisakipadresagrupe?Id=14566",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"spisakipadresagrupe",
+								"getspisakipadresagrupe"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "14566"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DodajSpisakIpAdresaGrupe",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : \"DataLink\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/spisakipadresagrupe/dodajspisakipadresagrupe?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"spisakipadresagrupe",
+								"dodajspisakipadresagrupe"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditSpisakIpAdreseGrupe",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"Id\" : 14619, \r\n    \"IpAdrese\" : \"111.22.23.1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/spisakipadresagrupe/editspisakipadresagrupe?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"spisakipadresagrupe",
+								"editspisakipadresagrupe"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteSpisakIpAdresaGrupe",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 14619\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/spisakipadresagrupe/brisispisakipadresagrupe?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"spisakipadresagrupe",
+								"brisispisakipadresagrupe"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "KorDodeljujePrivGrupiController",
+			"item": [
+				{
+					"name": "GetKorDodaljujePrivGrupi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44395/kordodeljujeprivgrupi/getkordodeljujeprivgrupi?Id=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"kordodeljujeprivgrupi",
+								"getkordodeljujeprivgrupi"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DodajKorDodeljujePrivGrupi",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"JedKorIme\" : \"TanjaM993\",\r\n    \"JedImeGrupe\" : \"Phoenix\",\r\n    \"JedBrPriv\" : 1,\r\n    \"DatumDodele\" : \"2021-11-11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/kordodeljujeprivgrupi/dodajkordodeljujeprivgrupi?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"kordodeljujeprivgrupi",
+								"dodajkordodeljujeprivgrupi"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditKorDodeljujePrivGrupi",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 3,\r\n    \"DatumDodele\" : \"2022-09-22\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/kordodeljujeprivgrupi/editkordodeljujeprivgrupi?Id=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"kordodeljujeprivgrupi",
+								"editkordodeljujeprivgrupi"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteKorDodeljujePrivGrupi",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 23\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/kordodeljujeprivgrupi/brisikordodeljujeprivgrupi?Id=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"kordodeljujeprivgrupi",
+								"brisikordodeljujeprivgrupi"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PredSifreKorController",
+			"item": [
+				{
+					"name": "GetPredSifreKor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44395/predsifrekor/getpredsifrekor?Id=14305",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"predsifrekor",
+								"getpredsifrekor"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "14305"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DodajPredSifreKor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 15458\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/predsifrekor/dodajpredsifrekor?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"predsifrekor",
+								"dodajpredsifrekor"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditPredSifreKor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 14387\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/predsifrekor/editpredsifrekor?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"predsifrekor",
+								"editpredsifrekor"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePredSifreKor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 14387\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/predsifrekor/brisipredsifrekor?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"predsifrekor",
+								"brisipredsifrekor"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PrivZaElIntController",
+			"item": [
+				{
+					"name": "GetPrivZaElInt",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44395/privzaelint/getprivzaelint?Id=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"privzaelint",
+								"getprivzaelint"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DodajPrivZaElInt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/privzaelint/dodajprivzaelint?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"privzaelint",
+								"dodajprivzaelint"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditPrivZaElInt",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 24,\r\n    \"Opis\" : \"asd\",\r\n    \"Akcija\" : \"ne\",\r\n    \"SamoVidiTajEl\" : \"ne\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/privzaelint/editprivzaelint?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"privzaelint",
+								"editprivzaelint"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePrivZaElInt",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 24\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/privzaelint/brisiprivzaelint?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"privzaelint",
+								"brisiprivzaelint"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "KorDodeljujePrivKorController",
+			"item": [
+				{
+					"name": "GetKorDodeljujePrivKor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44395/kordodeljujeprivkor/getkordodeljujeprivkor?Id=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"kordodeljujeprivkor",
+								"getkordodeljujeprivkor"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DodajKorDodeljujePrivKor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdKorNad\" : \"TanjaM993\",\r\n    \"IdKorPod\" : \"AnaP990\",\r\n    \"IdPriv\" : 1,\r\n    \"DatumDodele\" : \"2021-11-11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/kordodeljujeprivkor/dodajkordodeljujeprivkor",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"kordodeljujeprivkor",
+								"dodajkordodeljujeprivkor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditKorDodeljujePrivKor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 3,\r\n    \"DatumDodele\" : \"2022-09-22\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/kordodeljujeprivkor/editkordodeljujeprivkor?",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"kordodeljujeprivkor",
+								"editkordodeljujeprivkor"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteKorDodeljujePrivKor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 23\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/kordodeljujeprivkor/brisikordodeljujeprivkor?",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"kordodeljujeprivkor",
+								"brisikordodeljujeprivkor"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GrupaObuhvataGrupuController",
+			"item": [
+				{
+					"name": "GetGrupaObuhvataGrupu",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44395/grupaobuhvatagrupu/getgrupaobuhvatagrupu?Id=105",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"grupaobuhvatagrupu",
+								"getgrupaobuhvatagrupu"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "105"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DodajGrupaObuhvataGrupu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"IdGrupeNad\" : \"ComLink\",\r\n      \"IdGrupePod\" : \"DataDusk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/grupaobuhvatagrupu/dodajgrupaobuhvatagrupu?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"grupaobuhvatagrupu",
+								"dodajgrupaobuhvatagrupu"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BrisiGrupaObuhvataGrupu",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 157\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/grupaobuhvatagrupu/brisigrupaobuhvatagrupu?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"grupaobuhvatagrupu",
+								"brisigrupaobuhvatagrupu"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PrivZaFunModApkController",
+			"item": [
+				{
+					"name": "GetPrivZaFunModApk",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44395/privzafunmodapk/getprivzafunmodapk?id=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"privzafunmodapk",
+								"getprivzafunmodapk"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DodajPrivZaFunModApk",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/privzafunmodapk/dodajprivzafunmodapk?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"privzafunmodapk",
+								"dodajprivzafunmodapk"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditPrivZaFunModApk",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 23,\r\n    \"Opis\" : \"Manege Data Sequence\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/privzafunmodapk/editprivzafunmodapk?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"privzafunmodapk",
+								"editprivzafunmodapk"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BrisiPrivZaFunModApk",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 23\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/privzafunmodapk/brisiprivzafunmodapk?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"privzafunmodapk",
+								"brisiprivzafunmodapk"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AdministrativnePrivController",
+			"item": [
+				{
+					"name": "GetAdministrativnePriv",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44395/administrativnepriv/getadministrativnepriv?Id=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"administrativnepriv",
+								"getadministrativnepriv"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DodajAdministrativnePriv",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/administrativnepriv/dodajadministrativnepriv?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"administrativnepriv",
+								"dodajadministrativnepriv"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditAdministrativnePriv",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 24,\r\n    \"Opis\" : \"Delete User WIP Limits\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/administrativnepriv/editadministrativnepriv?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"administrativnepriv",
+								"editadministrativnepriv"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAdministrativnePriv",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 24\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/administrativnepriv/brisiadministrativnepriv?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"administrativnepriv",
+								"brisiadministrativnepriv"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RodStavkaMenijaController",
+			"item": [
+				{
+					"name": "GetRodStavkaMenija",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44395/rodstavkamenija/getrodstavkamenija?Id=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"rodstavkamenija",
+								"getrodstavkamenija"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DodajRodStavkaMenija",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdNad\" : 1,\r\n    \"IdPod\" : 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/rodstavkamenija/dodajrodstavkamenija?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"rodstavkamenija",
+								"dodajrodstavkamenija"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BrisiRodStavkaMenija",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\" : 22\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44395/rodstavkamenija/brisirodstavkamenija?=",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44395",
+							"path": [
+								"rodstavkamenija",
+								"brisirodstavkamenija"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
